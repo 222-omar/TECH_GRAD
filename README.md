@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TECH GRAD 🎓
 
-## Getting Started
+منصة متطورة لعرض وتوثيق مشاريع التخرج الأكاديمية والتكنولوجية لطلاب كليات الحاسبات والمعلومات والمعاهد العليا لعلوم الحاسب.
 
-First, run the development server:
+---
 
+## 🚀 كيفية تشغيل المشروع (Quick Start)
+
+1. الدخول إلى مجلد المشروع:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+cd d:\tech_grad\website
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. تشغيل السيرفر المحلي في وضع التطوير (Development):
+```bash
+npm run dev
+```
+افتح المتصفح على: `http://localhost:3000`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. لبناء النسخة النهائية للإنتاج (Production Build):
+```bash
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. لتشغيل نسخة الإنتاج (Production Run):
+```bash
+npm run start
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 هيكلية المشروع (Project Architecture)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+d:\tech_grad\website\
+├── src\
+│   ├── app\
+│   │   ├── layout.tsx              # الإطار العام مع الخطوط وNavbar وFooter
+│   │   ├── globals.css             # أنماط Tailwind CSS v4 والتخصيصات
+│   │   ├── page.tsx                # الصفحة الرئيسية (Hero, Featured Projects, Services, Skills, About)
+│   │   ├── contact\
+│   │   │   └── page.tsx            # صفحة التواصل المباشر مع واتساب والنموذج الكامل
+│   │   └── projects\
+│   │       ├── page.tsx            # صفحة معرض المشاريع مع البحث والتصفية بالتخصص
+│   │       └── [slug]\
+│   │           └── page.tsx        # الصفحة التفصيلية لكل مشروع بشكل ديناميكي (SSG)
+│   ├── components\
+│   │   ├── Navbar.tsx              # شريط التنقل المتجاوب بالكامل مع EN و CTA
+│   │   ├── Footer.tsx              # الفوتر الكامل مع روابط الخدمات ومعلومات الاتصال المباشرة
+│   │   ├── ProjectCard.tsx         # بطاقة المشروع المتطابقة مع التصميم المرجعي
+│   │   └── WhatsAppButton.tsx      # زر واتساب العائم في الزاوية اليسرى
+│   └── data\
+│       └── projects.ts             # الهيكل المركزي الموحد لكافة بيانات المشاريع
+└── public\
+    └── images\
+        └── projects\               # صور المشاريع (Tadwera, Bawabet, Saqr, Rehon)
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🛠️ المشاريع المدمجة (Integrated Projects)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 1. تدويرة (TADWERA)
+- **الوصف:** سوق ذكي مدعوم بالذكاء الاصطناعي لبيع وشراء المستعمل والخردة في مصر.
+- **التقنيات:** Next.js 14, React.js, Python, Django REST Framework, PostgreSQL, YOLOv8, OpenCV, LangChain, LangGraph, RAG, Vector Search, Embedding Models, Docker, Nginx, REST APIs.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 2. بوابة العربي (BAWABET AL-ARABY)
+- **الوصف:** نظام فحص ومتابعة المركبات صوتي مدعوم بالذكاء الاصطناعي بالعامية المصرية.
+- **التقنيات:** Deepgram Nova-3, ElevenLabs, Speech-to-Text (STT), Voice Activity Detection (VAD), Natural Language Processing, Python, Excel Integration, Google Sheets Integration, REST APIs.
+
+### 3. صقر (SAQR)
+- **الوصف:** منصة تداول ذكية مدعومة بالذكاء الاصطناعي متعدد الوكلاء (Multi-Agent Systems).
+- **التقنيات:** Agentic AI, Multi-Agent Systems, AI Council, Algorithmic Trading, Historical Backtesting, Paper Trading, Human-in-the-Loop, Risk Management, Approval-Based Live Trading.
+
+---
+
+## 📞 بيانات التواصل المعتمدة:
+- **الدولة:** مصر (ومتاح للعمل عن بُعد)
+- **الهاتف / واتساب:** `+20 114 391 2497`
+- **البريد الإلكتروني:** `techgrad.projects@gmail.com`
